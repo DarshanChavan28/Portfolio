@@ -371,11 +371,12 @@
           </a>
         </div>
       </div>
-      <form class="contact-form reveal" id="contactForm">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Your Message" required></textarea>
+      <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/darshcwork@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="_subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"
             style="margin-left:8px;"></i></button>
       </form>
